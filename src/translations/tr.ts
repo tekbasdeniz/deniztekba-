@@ -15,7 +15,7 @@ export const tr = {
     cta: 'Takvimden Randevu Al'
   },
   about: {
-    title: 'Deniz Tekbaş Hakkında',
+    title: 'Deniz Tekbaş Kimdir?',
     description: 'Deniz Tekbaş, pazarlama, iş dönüşümü ve karar sistemlerinin kesişiminde çalışan yapay zeka odaklı bir büyüme stratejistidir. Kurumların ölçeklenebilir büyüme yapıları kurmasına odaklanır.',
     btn: 'Daha Fazla Oku',
     fullText: [

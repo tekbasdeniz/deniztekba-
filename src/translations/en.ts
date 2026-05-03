@@ -15,7 +15,7 @@ export const en = {
     cta: 'Book a Strategy Call'
   },
   about: {
-    title: 'About Deniz Tekbaş',
+    title: 'Who is Deniz Tekbaş?',
     description: 'Deniz Tekbaş is an AI-focused growth strategist working at the intersection of marketing, business transformation, and decision systems. She helps organizations design scalable growth structures.',
     btn: 'Read More',
     fullText: [

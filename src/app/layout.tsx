@@ -10,25 +10,40 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://deniztekbas.com"),
   title: {
-    default: "Deniz Tekbaş",
+    default: "Deniz Tekbaş | Yapay Zeka ve Büyüme Stratejisi, Danışmanlık",
     template: "%s | Deniz Tekbaş",
   },
-  description: "AI-supported growth strategy, consulting, and innovation ecosystem collaborations by Deniz Tekbaş.",
+  description:
+    "Deniz Tekbaş — resmi site: yapay zeka destekli büyüme stratejisi, kurumsal danışmanlık, ThumbsAd ve TruOpt.ai. AI-supported growth strategy and consulting.",
   applicationName: "Deniz Tekbaş",
+  keywords: [
+    "Deniz Tekbaş",
+    "Deniz Tekbas",
+    "deniz tekbas",
+    "deniz tekbas danışman",
+    "büyüme stratejisti",
+    "yapay zeka danışmanlığı",
+    "ThumbsAd",
+    "TruOpt",
+  ],
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     url: "/",
-    title: "Deniz Tekbaş",
-    description: "AI-supported growth strategy, consulting, and innovation ecosystem collaborations by Deniz Tekbaş.",
+    locale: "tr_TR",
+    alternateLocale: ["en_US"],
+    title: "Deniz Tekbaş | Büyüme stratejisti ve yapay zeka danışmanlığı",
+    description:
+      "Deniz Tekbaş — yapay zeka destekli büyüme, danışmanlık ve inovasyon. Resmi web sitesi.",
     siteName: "Deniz Tekbaş",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Deniz Tekbaş",
-    description: "AI-supported growth strategy, consulting, and innovation ecosystem collaborations by Deniz Tekbaş.",
+    title: "Deniz Tekbaş | Büyüme stratejisti ve yapay zeka danışmanlığı",
+    description:
+      "Deniz Tekbaş — yapay zeka destekli büyüme, danışmanlık ve inovasyon. Resmi web sitesi.",
   },
 };
 
@@ -38,7 +53,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-scroll-behavior="smooth">
+    <html lang="tr" data-scroll-behavior="smooth">
       <body className={inter.className}>
         <LanguageProvider>
           <Navbar />
