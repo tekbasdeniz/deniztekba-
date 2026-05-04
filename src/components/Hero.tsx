@@ -9,24 +9,38 @@ export default function Hero() {
   const { t } = useLanguage();
 
   return (
-    <section className="section" style={{ 
-      minHeight: '80vh', 
-      display: 'flex', 
-      alignItems: 'center', 
-      paddingTop: '6rem', 
+    <section className="section" style={{
+      minHeight: '80vh',
+      display: 'flex',
+      alignItems: 'center',
+      paddingTop: '6rem',
       overflow: 'hidden',
       backgroundColor: 'var(--background)',
       position: 'relative'
     }}>
       <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', position: 'relative', zIndex: 2 }}>
-        
         <motion.h1
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          style={{
+            textTransform: 'uppercase',
+            letterSpacing: '0.15em',
+            fontSize: '0.9rem',
+            fontWeight: 600,
+            color: 'var(--secondary)',
+            marginBottom: '1rem',
+            display: 'block'
+          }}
+        >
+        </motion.h1>
+        <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          style={{ 
-            fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', 
-            fontWeight: 800, 
+          style={{
+            fontSize: 'clamp(2.5rem, 5vw, 4.5rem)',
+            fontWeight: 800,
             letterSpacing: '-0.03em',
             marginBottom: '1.5rem',
             lineHeight: 1.1,
@@ -35,7 +49,7 @@ export default function Hero() {
           }}
         >
           {t.hero.title}
-        </motion.h1>
+        </motion.h2>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}

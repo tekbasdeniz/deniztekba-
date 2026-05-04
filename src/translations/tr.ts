@@ -9,7 +9,7 @@ export const tr = {
     lang: 'EN'
   },
   hero: {
-    greeting: 'Ölçeklenebilir Dijital Büyüme',
+    greeting: 'Deniz Tekbaş',
     title: 'Strateji ile Tasarlanan, Yapay Zeka ile Güçlenen Büyüme.',
     description: 'Pazarlama, iş dönüşümü ve yapay zekanın kesişiminde; kurumlar için ölçeklenebilir büyüme yapıları ve karar destek mekanizmaları inşa ediyoruz.',
     cta: 'Takvimden Randevu Al'
@@ -41,7 +41,7 @@ export const tr = {
   },
   thumbsAd: {
     title: 'ThumbsAd',
-    description: 'Stratejik vizyonun operasyonel başarıyla buluştuğu yer. İleri düzey dijital büyüme projeleri ve yapay zeka destekli pazarlama mimarileri için ThumbsAd\i keşfedin.',
+    description: 'Stratejik vizyonun operasyonel başarıyla buluştuğu yer. İleri düzey dijital büyüme projeleri ve yapay zeka destekli pazarlama mimarileri için ThumbsAd\'i keşfedin.',
     btn: 'ThumbsAd\'i Keşfet'
   },
   truOpt: {

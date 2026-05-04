@@ -9,7 +9,7 @@ export const en = {
     lang: 'TR'
   },
   hero: {
-    greeting: 'Digital Ecosystem & Strategy',
+    greeting: 'Deniz Tekbaş',
     title: 'Growth Designed by Strategy, Powered by AI.',
     description: 'At the intersection of marketing, business transformation, and AI; we build scalable growth structures and decision-support frameworks for enterprises.',
     cta: 'Book a Strategy Call'
