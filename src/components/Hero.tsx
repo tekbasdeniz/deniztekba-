@@ -33,6 +33,7 @@ export default function Hero() {
             display: 'block'
           }}
         >
+          {t.hero.greeting}
         </motion.h1>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
