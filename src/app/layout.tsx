@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Lora } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
+const lora = Lora({ subsets: ["latin"], variable: '--font-serif' });
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://deniztekbas.com"),
@@ -54,7 +55,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" data-scroll-behavior="smooth">
-      <body className={inter.className}>
+      <body className={`${inter.className} ${lora.variable}`}>
         <LanguageProvider>
           <Navbar />
           <main>{children}</main>

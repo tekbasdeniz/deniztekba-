@@ -57,7 +57,7 @@ export default function ConsultingPage() {
               </div>
             </div>
 
-            <h2 className="consulting-heading" style={{ fontSize: '1.8rem', fontWeight: 600, marginBottom: '2rem', textAlign: 'right' }}>{t.mentorship.regional}</h2>
+            <h2 className="consulting-heading" style={{ fontSize: '1.8rem', fontWeight: 600, marginBottom: '2rem', textAlign: 'left' }}>{t.mentorship.regional}</h2>
             <div className="marquee-wrapper" style={{ position: 'relative', width: '100%', overflow: 'hidden', padding: '1rem 0', marginBottom: '2rem' }}>
               <div className="marquee-container reverse marquee-speed-regional">
                 {[...REGIONAL_LOGOS, ...REGIONAL_LOGOS].map((item, idx) => (

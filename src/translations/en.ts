@@ -11,7 +11,7 @@ export const en = {
   hero: {
     greeting: 'Deniz Tekbaş',
     title: 'Growth Designed by Strategy, Powered by AI.',
-    description: 'At the intersection of marketing, business transformation, and AI; we build scalable growth structures and decision-support frameworks for enterprises.',
+    description: 'At the intersection of marketing, business transformation, and AI; she builds scalable growth structures and decision-support frameworks for enterprises.',
     cta: 'Book a Strategy Call'
   },
   about: {
@@ -21,7 +21,7 @@ export const en = {
     fullText: [
       'Deniz Tekbaş is an AI-focused growth strategist working at the intersection of marketing, business transformation, and decision systems.',
       'Her work centers on helping enterprises, institutions, and high-growth organizations design scalable growth structures by combining strategic thinking, performance marketing, and AI-enabled decision frameworks.',
-      'She operates across three core layers:',
+      '**She operates across three core layers:**',
       '**Consulting & Advisory**\nShe supports leadership teams and organizations in designing AI-driven growth strategies, go-to-market structures, performance systems, and decision infrastructures that create measurable and long-term business growth.',
       '**ThumbsAd**\nAs the founder of ThumbsAd, she leads advanced digital growth projects that combine strategic planning, AI-enabled systems, and execution. ThumbsAd focuses on building scalable marketing architectures and technology-driven growth models for ambitious brands and enterprises.',
       '**TruOpt.ai**\nShe is also the creator of TruOpt.ai, an evolving AI-powered SaaS platform designed to optimize digital advertising performance through recommendation systems, decision support layers, and scalable campaign optimization frameworks.',
@@ -32,9 +32,9 @@ export const en = {
   },
   mentorship: {
     title: 'Consulting',
-    description: 'Empowering ideas and talents. See the programs and start-ups I have collaborated with.',
+    description: 'Empowering ideas and talents. See the programs and start-ups she has collaborated with.',
     btn: 'View All Engagements',
-    pageDesc: 'Beyond building successful systems, I leverage my strategic expertise to nurture the innovation ecosystem. By engaging with visionary startups, I guide them in optimizing their business models, overcoming complex challenges, and building AI-powered, scalable growth structures.',
+    pageDesc: 'Beyond building successful systems, she leverages her strategic expertise to nurture the innovation ecosystem. By engaging with visionary startups, she guides them in optimizing their business models, overcoming complex challenges, and building AI-powered, scalable growth structures.',
     global: 'Global Engagements',
     regional: 'Regional Engagements',
     platforms: 'Platforms & Ecosystems'

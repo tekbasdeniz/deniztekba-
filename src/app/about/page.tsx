@@ -38,8 +38,8 @@ export default function AboutPage() {
 
               <div>
                 {t.about.fullText.map((paragraph, index) => {
-                  const isBold = paragraph.startsWith('**') && paragraph.includes('**\n');
-                  if (isBold) {
+                  const isTitleAndContent = paragraph.startsWith('**') && paragraph.includes('**\n');
+                  if (isTitleAndContent) {
                     const parts = paragraph.split('**\n');
                     const title = parts[0].replace('**', '');
                     const content = parts[1];
@@ -50,6 +50,16 @@ export default function AboutPage() {
                       </div>
                     );
                   }
+
+                  const isFullyBold = paragraph.startsWith('**') && paragraph.endsWith('**');
+                  if (isFullyBold) {
+                    return (
+                      <p key={index} style={{ fontSize: '1.1rem', lineHeight: 1.8, color: 'var(--foreground)', fontWeight: 700, marginBottom: '1.5rem' }}>
+                        {paragraph.replace(/\*\*/g, '')}
+                      </p>
+                    );
+                  }
+
                   return (
                     <p key={index} style={{ fontSize: '1.1rem', lineHeight: 1.8, color: 'var(--secondary)', marginBottom: '1.5rem' }}>
                       {paragraph}

@@ -62,8 +62,8 @@ export default function NewsPage() {
             <div
               style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-                gap: '1.25rem',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
+                gap: '2rem',
               }}
             >
               {LINKEDIN_POSTS.map((post) => (
@@ -79,10 +79,10 @@ export default function NewsPage() {
                 >
                   <div
                     style={{
-                      maxWidth: '420px',
+                      maxWidth: '100%',
                       width: '100%',
                       margin: '0 auto',
-                      height: '520px',
+                      height: '600px',
                       overflow: 'hidden',
                       borderRadius: '0.75rem',
                       backgroundColor: '#fff',

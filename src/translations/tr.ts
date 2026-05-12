@@ -1,6 +1,6 @@
 export const tr = {
   nav: {
-    about: 'Hakkımda',
+    about: 'Hakkında',
     news: 'Haberler',
     mentorship: 'Danışmanlık',
     thumbsAd: 'ThumbsAd',
@@ -11,7 +11,7 @@ export const tr = {
   hero: {
     greeting: 'Deniz Tekbaş',
     title: 'Strateji ile Tasarlanan, Yapay Zeka ile Güçlenen Büyüme.',
-    description: 'Pazarlama, iş dönüşümü ve yapay zekanın kesişiminde; kurumlar için ölçeklenebilir büyüme yapıları ve karar destek mekanizmaları inşa ediyoruz.',
+    description: 'Pazarlama, iş dönüşümü ve yapay zekanın kesişiminde; kurumlar için ölçeklenebilir büyüme yapıları ve karar destek mekanizmaları inşa eder.',
     cta: 'Takvimden Randevu Al'
   },
   about: {
@@ -21,7 +21,7 @@ export const tr = {
     fullText: [
       'Deniz Tekbaş, pazarlama, iş dönüşümü ve karar sistemlerinin kesişiminde çalışan yapay zeka odaklı bir büyüme stratejistidir.',
       'Çalışmaları; kurumların, organizasyonların ve yüksek büyüme potansiyeline sahip yapıların stratejik düşünceyi, performans pazarlamasını ve yapay zeka destekli karar sistemlerini bir araya getirerek ölçeklenebilir büyüme yapıları kurmasına odaklanır.',
-      'Çalışma yapısını üç ana katmanda konumlandırır:',
+      '**Çalışma yapısını üç ana katmanda konumlandırır:**',
       '**Consulting & Advisory**\nLiderlik ekiplerine ve organizasyonlara; yapay zeka destekli büyüme stratejileri, go-to-market yapıları, performans sistemleri ve karar altyapıları tasarlama konusunda destek verir. Amaç, ölçülebilir ve uzun vadeli iş büyümesi yaratan sistemler kurmaktır.',
       '**ThumbsAd**\nThumbsAd’in kurucusu olarak; stratejik planlama, yapay zeka destekli sistemler ve uygulamayı bir araya getiren ileri düzey dijital büyüme projelerine liderlik eder. ThumbsAd, markalar ve kurumlar için ölçeklenebilir pazarlama mimarileri ve teknoloji odaklı büyüme modelleri geliştirmeye odaklanır.',
       '**TruOpt.ai**\nAynı zamanda TruOpt.ai’nin yaratıcıdır. TruOpt.ai; öneri sistemleri, karar destek katmanları ve ölçeklenebilir kampanya optimizasyon framework’leri ile dijital reklam performansını geliştirmek üzere tasarlanmış yapay zeka destekli bir SaaS platformudur.',
@@ -32,9 +32,9 @@ export const tr = {
   },
   mentorship: {
     title: 'Danışmanlık',
-    description: 'Fikirleri ve yetenekleri güçlendiriyoruz. İş birliği yaptığım programları ve girişimleri inceleyin.',
+    description: 'Fikirleri ve yetenekleri güçlendirir. İş birliği yaptığı programları ve girişimleri inceleyin.',
     btn: 'Tüm Çalışmaları Gör',
-    pageDesc: 'Başarılı sistemler kurmanın ötesinde, stratejik uzmanlığımı inovasyon ekosistemini beslemek için kullanıyorum. Vizyon sahibi girişimlerle etkileşim kurarak, iş modellerini optimize etmelerine, karmaşık zorlukların üstesinden gelmelerine ve yapay zeka destekli, ölçeklenebilir büyüme yapıları oluşturmalarına rehberlik ediyorum.',
+    pageDesc: 'Başarılı sistemler kurmanın ötesinde, stratejik uzmanlığını inovasyon ekosistemini beslemek için kullanır. Vizyon sahibi girişimlerle etkileşim kurarak, iş modellerini optimize etmelerine, karmaşık zorlukların üstesinden gelmelerine ve yapay zeka destekli, ölçeklenebilir büyüme yapıları oluşturmalarına rehberlik eder.',
     global: 'Global Çalışmalar',
     regional: 'Bölgesel Çalışmalar',
     platforms: 'Platformlar ve Ekosistemler'
