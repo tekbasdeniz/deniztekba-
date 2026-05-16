@@ -2,6 +2,7 @@ export type LogoItem = {
   name: string;
   logo: string;
   monochrome?: boolean;
+  invertOnLight?: boolean;
 };
 
 export const GLOBAL_LOGOS: LogoItem[] = [
@@ -11,9 +12,13 @@ export const GLOBAL_LOGOS: LogoItem[] = [
   { name: 'Maxi Cosi', logo: '/logos/global/Maxi_Cosi_logo.svg' },
   { name: 'Tchibo', logo: '/logos/global/Tchibo_logo.png' },
   { name: 'The Ritz-Carlton', logo: '/logos/global/The_Ritz-Carlton_logo.svg' },
+  { name: 'La French Tech', logo: '/logos/global/La Frech Tech -logo.png', invertOnLight: true },
 ];
 
 export const REGIONAL_LOGOS: LogoItem[] = [
+  { name: 'DenizBank', logo: '/logos/regional/DenizBank_logo.svg' },
+  { name: 'Galataport', logo: '/logos/regional/Galataport-logo.png', invertOnLight: true },
+  { name: 'Monster Notebook', logo: '/logos/regional/Monster_Notebook_logo.svg' },
   { name: 'Sabancı Üniversitesi', logo: '/logos/regional/Sabanc%C4%B1_%C3%9Cniversitesi_logo.svg' },
   { name: 'BAU', logo: '/logos/regional/bau-logo.svg' },
   { name: 'Bilgi Üniversitesi', logo: '/logos/regional/bilgi-universitesi-logo-.png' },
@@ -27,8 +32,8 @@ export const REGIONAL_LOGOS: LogoItem[] = [
   { name: 'Nobel İlaç', logo: '/logos/regional/nobel-ilac.png' },
   { name: 'Tech Istanbul', logo: '/logos/regional/tech-istanbul_logo-.png' },
   { name: 'Turkish E', logo: '/logos/regional/turkishe.png', monochrome: true },
-  { name: 'Yeditepe Üniversitesi', logo: '/logos/regional/yeditepe-universitesi-logo.svg' },
-  { name: 'Yeni Bir Lider', logo: '/logos/regional/yeni-bir-lider.png' },
+  { name: 'Yeditepe Üniversitesi', logo: '/logos/regional/yeditepe-universitesi-logo.svg', invertOnLight: true },
+  { name: 'Yeni Bir Lider', logo: '/logos/regional/yeni-bir-lider.png', invertOnLight: true },
   { name: 'Yıldız Teknik Üniversitesi', logo: '/logos/regional/y%C4%B1ld%C4%B1z-teknik-universitesi-logo.svg' },
   { name: 'Şişecam', logo: '/logos/regional/%C5%9Ei%C5%9Fecam_logo.svg' },
 ];

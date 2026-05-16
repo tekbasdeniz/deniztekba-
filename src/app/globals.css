@@ -197,6 +197,9 @@ button {
 }
 
 @media (max-width: 768px) {
+  .section {
+    padding: 4rem 0;
+  }
   .navLinks {
     display: none;
   }
@@ -244,15 +247,38 @@ button {
   animation-play-state: paused;
 }
 
+.logo-item {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+}
+
+.logo-item:hover {
+  transform: scale(1.05) translateY(-2px) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+  z-index: 10;
+}
+
 .logo-item img {
   filter: grayscale(100%);
   opacity: 0.7;
   transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .logo-item:hover img {
   filter: grayscale(0%);
   opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  .logo-item img.invert-on-light {
+    filter: grayscale(100%) invert(1) hue-rotate(180deg);
+  }
+  .logo-item:hover img.invert-on-light {
+    filter: grayscale(0%) invert(1) hue-rotate(180deg);
+  }
 }
 
 @media (max-width: 768px) {
@@ -268,8 +294,13 @@ button {
     text-align: center !important;
   }
   
-  .truopt-title, .truopt-desc {
+  .truopt-title {
     text-align: center !important;
+  }
+
+  .truopt-desc {
+    text-align: center !important;
+    padding: 0 1.5rem !important;
   }
   
   .truopt-btn-wrapper {
@@ -280,8 +311,13 @@ button {
     text-align: center !important;
   }
   
-  .thumbsad-title, .thumbsad-desc {
+  .thumbsad-title {
     text-align: center !important;
+  }
+
+  .thumbsad-desc {
+    text-align: center !important;
+    padding: 0 1.5rem !important;
   }
   
   .thumbsad-btn-wrapper {

@@ -9,14 +9,14 @@ export default function Hero() {
   const { t } = useLanguage();
 
   return (
-    <section className="section" style={{
-      paddingTop: '8rem',
-      paddingBottom: '4rem',
+    <section style={{
+      paddingTop: '5rem',
+      paddingBottom: '0',
       backgroundColor: 'var(--background)',
       display: 'flex',
       justifyContent: 'center',
     }}>
-      <div className="container" style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
         {/* ANA KART BÜTÜNÜ */}
         <motion.div
@@ -25,31 +25,24 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           style={{
             width: '100%',
-            maxWidth: '1200px',
-            borderRadius: '2rem',
             overflow: 'hidden',
             display: 'flex',
             flexDirection: 'column',
-            boxShadow: '0 20px 40px rgba(0,0,0,0.3)',
-            border: '1px solid var(--border)',
             backgroundColor: 'var(--card-bg)' 
           }}
         >
-          {/* ÜST KISIM: ARKA PLAN VİDEOSU VE BAŞLIKLAR */}
+          {/* ARKA PLAN VİDEOSU VE TÜM İÇERİK */}
           <div style={{
             position: 'relative',
             width: '100%',
-            minHeight: '500px', 
-            height: '65vh',     
-            maxHeight: '800px', 
+            minHeight: '85vh',     
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
             textAlign: 'center',
-            padding: '4rem 1.5rem',
+            padding: '6rem 1.5rem',
             overflow: 'hidden',
-            borderRadius: '0 0 2rem 2rem', 
             zIndex: 10 
           }}>
             <video
@@ -71,12 +64,12 @@ export default function Hero() {
                 left: 0,
                 width: '100%',
                 height: '100%',
-                backgroundColor: 'rgba(0, 0, 0, 0.60)',
+                backgroundColor: 'rgba(0, 0, 0, 0.65)',
                 zIndex: 1
               }}
             />
 
-            {/* VİDEO ÜZERİNDEKİ BAŞLIKLAR */}
+            {/* VİDEO ÜZERİNDEKİ İÇERİKLER */}
             <div style={{ position: 'relative', zIndex: 2, display: 'flex', flexDirection: 'column', alignItems: 'center', maxWidth: '900px' }}>
               <motion.h1
                 initial={{ opacity: 0 }}
@@ -105,55 +98,43 @@ export default function Hero() {
                   letterSpacing: '-0.02em',
                   lineHeight: 1.15,
                   color: '#ffffff',
-                  textShadow: '0 4px 20px rgba(0,0,0,0.3)'
+                  textShadow: '0 4px 20px rgba(0,0,0,0.3)',
+                  marginBottom: '1.5rem'
                 }}
               >
                 {t.hero.title}
               </motion.h2>
+
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                style={{
+                  fontSize: 'clamp(1rem, 2vw, 1.15rem)',
+                  color: 'rgba(255, 255, 255, 0.85)',
+                  marginBottom: '2.5rem',
+                  lineHeight: 1.7,
+                  maxWidth: '800px',
+                  textShadow: '0 2px 10px rgba(0,0,0,0.3)'
+                }}
+              >
+                {t.hero.description}
+              </motion.p>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}
+              >
+                <a href="https://calendar.app.google/hjAXB9fuz4cwxXfe7" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{
+                  boxShadow: '0 4px 15px rgba(0,0,0,0.2)'
+                }}>
+                  <CalendarDays size={18} />
+                  {t.hero.cta}
+                </a>
+              </motion.div>
             </div>
-          </div>
-
-          {/* ALT KISIM: AÇIKLAMA VE BUTON ALANI */}
-          <div
-            style={{
-              padding: '3rem 2rem 3rem 2rem', 
-              width: '100%',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              textAlign: 'center',
-              backgroundColor: 'var(--card-bg)',
-              position: 'relative',
-              marginTop: '0', 
-              zIndex: 3
-            }}
-          >
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              style={{
-                fontSize: 'clamp(1rem, 2vw, 1.15rem)',
-                color: 'var(--secondary)',
-                marginBottom: '2rem',
-                lineHeight: 1.7,
-                maxWidth: '800px'
-              }}
-            >
-              {t.hero.description}
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}
-            >
-              <a href="https://calendar.app.google/hjAXB9fuz4cwxXfe7" target="_blank" rel="noopener noreferrer" className="btn-primary">
-                <CalendarDays size={18} />
-                {t.hero.cta}
-              </a>
-            </motion.div>
           </div>
         </motion.div>
       </div>

@@ -50,8 +50,8 @@ export default function ConsultingPage() {
             <div className="marquee-wrapper" style={{ position: 'relative', width: '100%', overflow: 'hidden', padding: '1rem 0', marginBottom: '2rem' }}>
               <div className="marquee-container marquee-speed-global">
                 {[...GLOBAL_LOGOS, ...GLOBAL_LOGOS, ...GLOBAL_LOGOS].map((item, idx) => (
-                  <motion.div key={`global-${idx}`} className="logo-item" whileHover={{ scale: 1.05 }} style={logoCardStyle}>
-                    <img src={item.logo} alt={item.name} style={getLogoStyle(item)} />
+                  <motion.div key={`global-${idx}`} className="logo-item" style={logoCardStyle}>
+                    <img src={item.logo} alt={item.name} className={item.invertOnLight ? 'invert-on-light' : ''} style={getLogoStyle(item)} />
                   </motion.div>
                 ))}
               </div>
@@ -61,8 +61,8 @@ export default function ConsultingPage() {
             <div className="marquee-wrapper" style={{ position: 'relative', width: '100%', overflow: 'hidden', padding: '1rem 0', marginBottom: '2rem' }}>
               <div className="marquee-container reverse marquee-speed-regional">
                 {[...REGIONAL_LOGOS, ...REGIONAL_LOGOS].map((item, idx) => (
-                  <motion.div key={`regional-${idx}`} className="logo-item" whileHover={{ scale: 1.05 }} style={logoCardStyle}>
-                    <img src={item.logo} alt={item.name} style={getLogoStyle(item)} />
+                  <motion.div key={`regional-${idx}`} className="logo-item" style={logoCardStyle}>
+                    <img src={item.logo} alt={item.name} className={item.invertOnLight ? 'invert-on-light' : ''} style={getLogoStyle(item)} />
                   </motion.div>
                 ))}
               </div>
@@ -72,8 +72,8 @@ export default function ConsultingPage() {
             <div className="marquee-wrapper" style={{ position: 'relative', width: '100%', overflow: 'hidden', padding: '1rem 0', marginBottom: '4rem' }}>
               <div className="marquee-container marquee-speed-platform">
                 {[...PLATFORM_LOGOS, ...PLATFORM_LOGOS, ...PLATFORM_LOGOS].map((item, idx) => (
-                  <motion.div key={`platform-${idx}`} className="logo-item" whileHover={{ scale: 1.05 }} style={logoCardStyle}>
-                    <img src={item.logo} alt={item.name} style={getLogoStyle(item)} />
+                  <motion.div key={`platform-${idx}`} className="logo-item" style={logoCardStyle}>
+                    <img src={item.logo} alt={item.name} className={item.invertOnLight ? 'invert-on-light' : ''} style={getLogoStyle(item)} />
                   </motion.div>
                 ))}
               </div>

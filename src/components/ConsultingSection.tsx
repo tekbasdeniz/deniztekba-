@@ -3,7 +3,7 @@
 import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { motion } from 'framer-motion';
-import { ALL_LOGOS } from '@/data/logos';
+import { GLOBAL_LOGOS, REGIONAL_LOGOS } from '@/data/logos';
 import Link from 'next/link';
 
 export default function ConsultingSection() {
@@ -27,11 +27,10 @@ export default function ConsultingSection() {
       <div className="marquee-wrapper" style={{ position: 'relative', width: '100%', overflow: 'hidden', padding: '1rem 0 3rem 0' }}>
         <div className="marquee-container">
           {/* Double array for infinite scroll effect */}
-          {[...ALL_LOGOS, ...ALL_LOGOS].map((item, idx) => (
-            <motion.div
+          {[...GLOBAL_LOGOS, ...REGIONAL_LOGOS, ...GLOBAL_LOGOS, ...REGIONAL_LOGOS].map((item, idx) => (
+              <motion.div
               key={idx}
               className="logo-item"
-              whileHover={{ scale: 1.05, y: -5 }}
               style={{
                 flexShrink: 0,
                 width: '180px',
@@ -52,6 +51,7 @@ export default function ConsultingSection() {
                 <img
                   src={item.logo}
                   alt={item.name}
+                  className={item.invertOnLight ? 'invert-on-light' : ''}
                   style={item.monochrome ? monochromeLogoStyle : { width: '100%', height: '100%', objectFit: 'contain' }}
                 />
               </div>

@@ -9,7 +9,7 @@ export default function ContactSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="contact" className="section" style={{ position: 'relative', overflow: 'hidden', padding: '8rem 0' }}>
+    <section id="contact" className="section" style={{ position: 'relative', overflow: 'hidden' }}>
       
       {/* Background aesthetics */}
       <div style={{ position: 'absolute', inset: 0, zIndex: 0, backgroundColor: 'var(--card-bg)' }}>

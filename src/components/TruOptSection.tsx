@@ -27,7 +27,7 @@ export default function TruOptSection() {
         }} />
       </div>
 
-      <div className="container" style={{ position: 'relative', zIndex: 1, padding: '2rem 0' }}>
+      <div className="container" style={{ position: 'relative', zIndex: 1, paddingTop: '2rem', paddingBottom: '2rem' }}>
         <div className="truopt-content" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', maxWidth: '800px', marginLeft: 'auto' }}>
           <motion.div
             initial={{ opacity: 0, x: 30 }}
