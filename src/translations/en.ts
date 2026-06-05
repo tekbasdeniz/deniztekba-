@@ -14,6 +14,24 @@ export const en = {
     description: 'At the intersection of marketing, business transformation, and AI; she builds scalable growth structures and decision-support frameworks for enterprises.',
     cta: 'Book a Strategy Call'
   },
+  stats: {
+    ariaLabel: 'Impact and experience highlights',
+    heading: 'Deniz Tekbaş — Impact at a Glance',
+    intro:
+      'Deniz Tekbaş is an AI-focused growth strategist: 2300+ students trained, partnerships with 8+ universities and 10+ communities, founder of ThumbsAd and TruOpt.ai.',
+    cards: [
+      { value: '2300+', label: 'Students Trained', sub: '' },
+      { value: '8+', label: 'Universities', sub: '' },
+      { value: '10+', label: 'Communities & Associations', sub: '' },
+      { value: '', label: 'Founder of', sub: 'ThumbsAd & TruOpt.ai' },
+      { value: 'AI • Marketing • Growth', label: '', sub: 'Across Corporate, Startup, Investor & Academic Ecosystems' },
+      { value: '2300+', label: 'Students Trained', sub: '' },
+      { value: '8+', label: 'Universities', sub: '' },
+      { value: '10+', label: 'Communities & Associations', sub: '' },
+      { value: '', label: 'Founder of', sub: 'ThumbsAd & TruOpt.ai' },
+      { value: 'AI • Marketing • Growth', label: '', sub: 'Across Corporate, Startup, Investor & Academic Ecosystems' },
+    ],
+  },
   about: {
     title: 'Who is Deniz Tekbaş?',
     description: 'Deniz Tekbaş is an AI-focused growth strategist working at the intersection of marketing, business transformation, and decision systems. She helps organizations design scalable growth structures.',

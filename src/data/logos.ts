@@ -13,6 +13,7 @@ export const GLOBAL_LOGOS: LogoItem[] = [
   { name: 'Tchibo', logo: '/logos/global/Tchibo_logo.png' },
   { name: 'The Ritz-Carlton', logo: '/logos/global/The_Ritz-Carlton_logo.svg' },
   { name: 'La French Tech', logo: '/logos/global/La Frech Tech -logo.png', invertOnLight: true },
+  { name: 'Bodrum Bodrum', logo: '/logos/global/bodrum-bodrum_logo.jpeg' },
 ];
 
 export const REGIONAL_LOGOS: LogoItem[] = [
@@ -36,6 +37,7 @@ export const REGIONAL_LOGOS: LogoItem[] = [
   { name: 'Yeni Bir Lider', logo: '/logos/regional/yeni-bir-lider.png', invertOnLight: true },
   { name: 'Yıldız Teknik Üniversitesi', logo: '/logos/regional/y%C4%B1ld%C4%B1z-teknik-universitesi-logo.svg' },
   { name: 'Şişecam', logo: '/logos/regional/%C5%9Ei%C5%9Fecam_logo.svg' },
+  { name: 'YZD', logo: '/logos/regional/YZD_logo.jpeg' },
 ];
 
 export const PLATFORM_LOGOS: LogoItem[] = [

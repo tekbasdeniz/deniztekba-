@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { useLanguage } from '@/context/LanguageContext';
 import ContactSection from '@/components/ContactSection';
 import { motion } from 'framer-motion';
@@ -29,10 +30,14 @@ export default function AboutPage() {
                 overflow: 'hidden',
                 boxShadow: '0 10px 25px rgba(0,0,0,0.1)'
               }}>
-                <img 
-                  src="/deniz-tekbas-foto.jpeg" 
-                  alt="Deniz Tekbaş" 
-                  style={{ width: '100%', height: 'auto', display: 'block' }} 
+                <Image
+                  src="/deniz-tekbas-foto.jpeg"
+                  alt="Deniz Tekbaş"
+                  width={700}
+                  height={900}
+                  sizes="(max-width: 768px) 100vw, 350px"
+                  style={{ width: '100%', height: 'auto', display: 'block' }}
+                  priority
                 />
               </div>
 

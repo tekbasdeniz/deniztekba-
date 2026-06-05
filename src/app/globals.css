@@ -1,30 +1,18 @@
 :root {
-  --background: #09090b;
-  --foreground: #fafafa;
-  --primary: #f8f9fa;
-  --secondary: #a1a1aa;
-  --accent: #e63946;
-  --card-bg: #18181b;
-  --border: #27272a;
+  --background: #e2e8f0; 
+  --foreground: #0f172a;
+  --primary: #1e293b;
+  --secondary: #475569;
+  --accent: #b91c1c;
+  --card-bg: #f1f5f9; /* Slate 100 */
+  --border: #cbd5e1;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --glass-bg: rgba(9, 9, 11, 0.75);
-  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-bg: rgba(226, 232, 240, 0.85);
+  --glass-border: rgba(15, 23, 42, 0.05);
+  --brand-blue: #0a246b;
+  --brand-blue-highlight: #8eb9f5;
 }
 
-@media (prefers-color-scheme: light) {
-  /* Keep default very sleek if they use light mode, but lean towards a premium off-white */
-  :root {
-    --background: #e2e8f0; 
-    --foreground: #0f172a;
-    --primary: #1e293b;
-    --secondary: #475569;
-    --accent: #b91c1c;
-    --card-bg: #f1f5f9; /* Slate 100 */
-    --border: #cbd5e1;
-    --glass-bg: rgba(226, 232, 240, 0.85);
-    --glass-border: rgba(15, 23, 42, 0.05);
-  }
-}
 
 
 * {
@@ -272,14 +260,13 @@ button {
   opacity: 1;
 }
 
-@media (prefers-color-scheme: light) {
-  .logo-item img.invert-on-light {
-    filter: grayscale(100%) invert(1) hue-rotate(180deg);
-  }
-  .logo-item:hover img.invert-on-light {
-    filter: grayscale(0%) invert(1) hue-rotate(180deg);
-  }
+.logo-item img.invert-on-light {
+  filter: grayscale(100%) invert(1) hue-rotate(180deg);
 }
+.logo-item:hover img.invert-on-light {
+  filter: grayscale(0%) invert(1) hue-rotate(180deg);
+}
+
 
 @media (max-width: 768px) {
   .about-image-wrapper {
@@ -340,11 +327,243 @@ button {
   object-position: center;
   transform: scale(1.05); /* Very slight zoom for desktop to hide minor edges without cutting off the woman */
   z-index: 0;
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 @media (max-width: 768px) {
   .hero-video {
     object-position: 15% 40%; /* Sola (kadına) doğru odaklan ve alttaki Canon yazısını gizlemek için hafif yukarı kaydır */
     transform: scale(2.0); /* Yazıyı tamamen ekran dışına itmek için yakınlaştırmayı artır */
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+}
+
+/* Hero CTA — animated border button */
+.super-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 28px;
+  background: linear-gradient(145deg, #0f0f0f, #1c1c1c);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  color: #fff;
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1;
+  text-decoration: none;
+}
+
+.super-button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, #00ffff, #ff00ff, #00ffff);
+  animation: super-button-rotate 4s linear infinite;
+  z-index: -2;
+}
+
+.super-button::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #0a0a0a;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.super-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
+}
+
+.super-button:hover .super-button-icon {
+  transform: translateX(2px);
+}
+
+.super-button-inner {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.super-button-icon {
+  flex-shrink: 0;
+  color: #00ffff;
+  transition: transform 0.3s ease-in-out;
+}
+
+@keyframes super-button-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .super-button {
+    padding: 12px 20px;
+    gap: 8px;
+  }
+}
+
+/* Screen reader / SEO text (visually hidden, crawlable) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.stats-seo-list {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  list-style: none;
+}
+
+/* Stats 3D carousel section */
+.stats-section {
+  background-color: var(--card-bg);
+  padding: 2rem 1.5rem 3.5rem;
+  overflow: hidden;
+  margin-top: -0.5rem;
+}
+
+.stats-section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.stats-header {
+  margin: 0;
+}
+
+.stats-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 3rem auto 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #ffffff;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #8eb9f5 0%, #0a246b 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #8eb9f5 0%, #0a246b 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.card .heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+  line-height: 1.25;
+}
+
+.card p:not(.heading) {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.4;
+}
+
+.card p:last-child {
+  color: #8eb9f5 !important;
+  font-weight: 600;
+}
+
+.card:hover::after {
+  filter: blur(30px);
+}
+
+.card:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .super-button::before {
+    animation: none !important;
   }
 }

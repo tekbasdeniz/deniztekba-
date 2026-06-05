@@ -4,7 +4,8 @@ import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import ContactSection from '@/components/ContactSection';
 import { motion } from 'framer-motion';
-import { GLOBAL_LOGOS, REGIONAL_LOGOS, PLATFORM_LOGOS, type LogoItem } from '@/data/logos';
+import { GLOBAL_LOGOS, REGIONAL_LOGOS, PLATFORM_LOGOS } from '@/data/logos';
+import LogoImage from '@/components/LogoImage';
 
 const logoCardStyle = {
   flexShrink: 0 as const,
@@ -20,14 +21,6 @@ const logoCardStyle = {
   cursor: 'pointer',
   boxShadow: '0 4px 15px rgba(0, 0, 0, 0.05)',
 };
-
-const defaultLogoStyle = { width: '100%', height: '100%', objectFit: 'contain' as const };
-const monochromeLogoStyle = {
-  ...defaultLogoStyle,
-  filter: 'grayscale(100%) brightness(0.3) contrast(1.1)',
-};
-
-const getLogoStyle = (item: LogoItem) => (item.monochrome ? monochromeLogoStyle : defaultLogoStyle);
 
 export default function ConsultingPage() {
   const { t } = useLanguage();
@@ -51,7 +44,9 @@ export default function ConsultingPage() {
               <div className="marquee-container marquee-speed-global">
                 {[...GLOBAL_LOGOS, ...GLOBAL_LOGOS, ...GLOBAL_LOGOS].map((item, idx) => (
                   <motion.div key={`global-${idx}`} className="logo-item" style={logoCardStyle}>
-                    <img src={item.logo} alt={item.name} className={item.invertOnLight ? 'invert-on-light' : ''} style={getLogoStyle(item)} />
+                    <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                      <LogoImage item={item} sizes="200px" />
+                    </div>
                   </motion.div>
                 ))}
               </div>
@@ -62,7 +57,9 @@ export default function ConsultingPage() {
               <div className="marquee-container reverse marquee-speed-regional">
                 {[...REGIONAL_LOGOS, ...REGIONAL_LOGOS].map((item, idx) => (
                   <motion.div key={`regional-${idx}`} className="logo-item" style={logoCardStyle}>
-                    <img src={item.logo} alt={item.name} className={item.invertOnLight ? 'invert-on-light' : ''} style={getLogoStyle(item)} />
+                    <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                      <LogoImage item={item} sizes="200px" />
+                    </div>
                   </motion.div>
                 ))}
               </div>
@@ -73,7 +70,9 @@ export default function ConsultingPage() {
               <div className="marquee-container marquee-speed-platform">
                 {[...PLATFORM_LOGOS, ...PLATFORM_LOGOS, ...PLATFORM_LOGOS].map((item, idx) => (
                   <motion.div key={`platform-${idx}`} className="logo-item" style={logoCardStyle}>
-                    <img src={item.logo} alt={item.name} className={item.invertOnLight ? 'invert-on-light' : ''} style={getLogoStyle(item)} />
+                    <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                      <LogoImage item={item} sizes="200px" />
+                    </div>
                   </motion.div>
                 ))}
               </div>

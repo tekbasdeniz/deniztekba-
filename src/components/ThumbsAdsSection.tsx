@@ -10,7 +10,7 @@ export default function ThumbsAdsSection() {
 
   return (
     <section id="thumbsad" className="section" style={{ position: 'relative', overflow: 'hidden' }}>
-      <div 
+      <div
         style={{
           position: 'absolute',
           inset: 0,
@@ -33,20 +33,20 @@ export default function ThumbsAdsSection() {
             viewport={{ once: true, margin: '-50px' }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="thumbsad-title" style={{ 
-              fontSize: 'clamp(2rem, 5vw, 4rem)', 
-              fontWeight: 800, 
-              color: '#ffffff', 
+            <h2 className="thumbsad-title" style={{
+              fontSize: 'clamp(2rem, 5vw, 4rem)',
+              fontWeight: 800,
+              color: '#ffffff',
               marginBottom: '1rem',
               letterSpacing: '-0.02em',
               lineHeight: 1.1
             }}>
               {t.thumbsAd.title}
             </h2>
-            <p className="thumbsad-desc" style={{ 
-              fontSize: 'clamp(1rem, 2.5vw, 1.25rem)', 
-              color: 'rgba(255, 255, 255, 0.9)', 
-              lineHeight: 1.6, 
+            <p className="thumbsad-desc" style={{
+              fontSize: 'clamp(1rem, 2.5vw, 1.25rem)',
+              color: 'rgba(255, 255, 255, 0.9)',
+              lineHeight: 1.6,
               marginBottom: '2.5rem',
               maxWidth: '650px'
             }}>
@@ -54,10 +54,10 @@ export default function ThumbsAdsSection() {
             </p>
 
             <div className="thumbsad-btn-wrapper" style={{ display: 'flex' }}>
-              <a 
-                href="https://thumbsad.com" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://thumbsad.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',

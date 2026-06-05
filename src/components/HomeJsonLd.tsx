@@ -11,7 +11,7 @@ export default function HomeJsonLd() {
       email: "info@deniztekbas.com",
       jobTitle: "Growth strategist, AI and marketing consultant",
       description:
-        "Deniz Tekbaş — yapay zeka odaklı büyüme stratejisti; danışmanlık, ThumbsAd ve TruOpt.ai ile kurumlara ölçeklenebilir büyüme ve karar sistemleri tasarlar.",
+        "Deniz Tekbaş — yapay zeka odaklı büyüme stratejisti; 2300+ öğrenci eğitimi, 8+ üniversite iş birliği, ThumbsAd ve TruOpt.ai kurucusu.",
       sameAs: [
         "https://www.linkedin.com/in/deniz-tekbas",
         "https://www.instagram.com/tekbasdeniz",
@@ -24,6 +24,10 @@ export default function HomeJsonLd() {
         "Business consulting",
         "Yapay zeka",
         "Büyüme stratejisi",
+      ],
+      founder: [
+        { "@type": "Organization", name: "ThumbsAd" },
+        { "@type": "Organization", name: "TruOpt.ai" },
       ],
     },
     {
@@ -39,6 +43,22 @@ export default function HomeJsonLd() {
         name: "Deniz Tekbaş",
       },
       inLanguage: ["tr-TR", "en-US"],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: "Deniz Tekbaş — professional highlights",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "2300+ students trained" },
+        { "@type": "ListItem", position: 2, name: "8+ universities" },
+        { "@type": "ListItem", position: 3, name: "10+ communities and associations" },
+        { "@type": "ListItem", position: 4, name: "Founder of ThumbsAd and TruOpt.ai" },
+        {
+          "@type": "ListItem",
+          position: 5,
+          name: "AI, marketing and growth across corporate, startup, investor and academic ecosystems",
+        },
+      ],
     },
   ];
 

@@ -14,6 +14,24 @@ export const tr = {
     description: 'Pazarlama, iş dönüşümü ve yapay zekanın kesişiminde; kurumlar için ölçeklenebilir büyüme yapıları ve karar destek mekanizmaları inşa eder.',
     cta: 'Takvimden Randevu Al'
   },
+  stats: {
+    ariaLabel: 'Etki ve deneyim öne çıkanlar',
+    heading: 'Deniz Tekbaş — Öne Çıkan Etki',
+    intro:
+      'Deniz Tekbaş, yapay zeka odaklı büyüme stratejistidir: 2300+ öğrenci eğitimi, 8+ üniversite ve 10+ topluluk iş birliği; ThumbsAd ve TruOpt.ai kurucusu.',
+    cards: [
+      { value: '2300+', label: 'Eğitilen Öğrenci', sub: '' },
+      { value: '8+', label: 'Üniversite', sub: '' },
+      { value: '10+', label: 'Topluluk ve Dernek', sub: '' },
+      { value: '', label: 'Kurucusu', sub: 'ThumbsAd & TruOpt.ai' },
+      { value: 'AI • Pazarlama • Büyüme', label: '', sub: 'Kurumsal, Startup, Yatırımcı ve Akademik Ekosistemler Arasında' },
+      { value: '2300+', label: 'Eğitilen Öğrenci', sub: '' },
+      { value: '8+', label: 'Üniversite', sub: '' },
+      { value: '10+', label: 'Topluluk ve Dernek', sub: '' },
+      { value: '', label: 'Kurucusu', sub: 'ThumbsAd & TruOpt.ai' },
+      { value: 'AI • Pazarlama • Büyüme', label: '', sub: 'Kurumsal, Startup, Yatırımcı ve Akademik Ekosistemler Arasında' },
+    ],
+  },
   about: {
     title: 'Deniz Tekbaş Kimdir?',
     description: 'Deniz Tekbaş, pazarlama, iş dönüşümü ve karar sistemlerinin kesişiminde çalışan yapay zeka odaklı bir büyüme stratejistidir. Kurumların ölçeklenebilir büyüme yapıları kurmasına odaklanır.',

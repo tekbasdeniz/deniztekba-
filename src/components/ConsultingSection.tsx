@@ -5,16 +5,10 @@ import { useLanguage } from '@/context/LanguageContext';
 import { motion } from 'framer-motion';
 import { GLOBAL_LOGOS, REGIONAL_LOGOS } from '@/data/logos';
 import Link from 'next/link';
+import LogoImage from '@/components/LogoImage';
 
 export default function ConsultingSection() {
   const { t } = useLanguage();
-  const monochromeLogoStyle = {
-    width: '100%',
-    height: '100%',
-    objectFit: 'contain' as const,
-    filter: 'grayscale(100%) brightness(0.3) contrast(1.1)',
-  };
-
   return (
     <section id="consulting" className="section" style={{ overflow: 'hidden', backgroundColor: 'var(--background)' }}>
       <div className="container" style={{ marginBottom: '2rem', textAlign: 'center' }}>
@@ -48,12 +42,7 @@ export default function ConsultingSection() {
               }}
             >
               <div style={{ position: 'relative', width: '80%', height: '80%' }}>
-                <img
-                  src={item.logo}
-                  alt={item.name}
-                  className={item.invertOnLight ? 'invert-on-light' : ''}
-                  style={item.monochrome ? monochromeLogoStyle : { width: '100%', height: '100%', objectFit: 'contain' }}
-                />
+                <LogoImage item={item} sizes="144px" />
               </div>
             </motion.div>
           ))}

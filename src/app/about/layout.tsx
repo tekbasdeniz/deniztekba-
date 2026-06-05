@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Hakkımda | About',
+  title: 'Hakkında | About',
   description: 'Deniz Tekbaş hakkında detaylı bilgi. Büyüme stratejisti, yapay zeka danışmanı ve teknoloji ekosistemi lideri.',
 };
 
