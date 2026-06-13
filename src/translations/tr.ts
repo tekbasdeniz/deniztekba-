@@ -20,7 +20,7 @@ export const tr = {
     intro:
       'Deniz Tekbaş, yapay zeka odaklı büyüme stratejistidir: 2300+ öğrenci eğitimi, 8+ üniversite ve 10+ topluluk iş birliği; ThumbsAd ve TruOpt.ai kurucusu.',
     cards: [
-      { value: '2300+', label: 'Eğitilen Öğrenci', sub: '' },
+      { value: '2300+', label: 'Profesyonel & Öğrenci', sub: '' },
       { value: '8+', label: 'Üniversite', sub: '' },
       { value: '10+', label: 'Topluluk ve Dernek', sub: '' },
       { value: '', label: 'Kurucusu', sub: 'ThumbsAd & TruOpt.ai' },

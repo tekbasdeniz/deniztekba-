@@ -20,7 +20,7 @@ export const en = {
     intro:
       'Deniz Tekbaş is an AI-focused growth strategist: 2300+ students trained, partnerships with 8+ universities and 10+ communities, founder of ThumbsAd and TruOpt.ai.',
     cards: [
-      { value: '2300+', label: 'Students Trained', sub: '' },
+      { value: '2300+', label: 'Professionals & Students', sub: '' },
       { value: '8+', label: 'Universities', sub: '' },
       { value: '10+', label: 'Communities & Associations', sub: '' },
       { value: '', label: 'Founder of', sub: 'ThumbsAd & TruOpt.ai' },

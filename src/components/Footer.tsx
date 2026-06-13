@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="footer" style={{ backgroundColor: '#0f172a', color: '#f8fafc', padding: '6rem 0 2rem 0', borderTop: '1px solid rgba(255, 255, 255, 0.05)' }}>
       <div className="container">
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '4rem', marginBottom: '4rem' }}>
-          
+
           {/* Brand & Social */}
           <div>
             <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: '1.5rem', color: '#ffffff' }}>Deniz Tekbaş</h3>
@@ -37,7 +37,7 @@ export default function Footer() {
                   <circle cx="4" cy="4" r="2"></circle>
                 </svg>
               </a>
-              <a href="mailto:info@deniztekbas.com" style={{ color: '#cbd5e1', opacity: 0.7, transition: 'opacity 0.2s' }} onMouseOver={(e) => e.currentTarget.style.opacity = '1'} onMouseOut={(e) => e.currentTarget.style.opacity = '0.7'}>
+              <a href="mailto:tekbasdeniz@thumbsad.com" style={{ color: '#cbd5e1', opacity: 0.7, transition: 'opacity 0.2s' }} onMouseOver={(e) => e.currentTarget.style.opacity = '1'} onMouseOut={(e) => e.currentTarget.style.opacity = '0.7'}>
                 <Mail size={22} />
               </a>
             </div>
