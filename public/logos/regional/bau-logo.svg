@@ -15,6 +15,10 @@
       }
 
       .cls-2, .cls-3 {
+        fill: #005baa;
+      }
+
+      .cls-5 {
         fill: #fff;
       }
 
@@ -26,7 +30,7 @@
   <g id="Layer_1" data-name="Layer 1">
     <g>
       <g>
-        <rect class="cls-3" x="14.42" y="14.42" width="84.54" height="84.54" rx="7.44" ry="7.44" transform="translate(-23.48 56.69) rotate(-45)"/>
+        <rect class="cls-5" x="14.42" y="14.42" width="84.54" height="84.54" rx="7.44" ry="7.44" transform="translate(-23.48 56.69) rotate(-45)"/>
         <path class="cls-4" d="M88.96,80.26H24.43l28.97,28.97c.91.91,2.1,1.36,3.29,1.36s2.38-.45,3.29-1.36l28.97-28.97"/>
         <polygon class="cls-1" points="35.94 21.61 20.62 36.93 41.97 69.32 35.94 21.61"/>
         <polygon class="cls-1" points="20.59 36.96 7.38 50.17 32.66 73.45 20.59 36.96"/>

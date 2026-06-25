@@ -34,7 +34,7 @@ export const REGIONAL_LOGOS: LogoItem[] = [
   { name: 'Tech Istanbul', logo: '/logos/regional/tech-istanbul_logo-.png' },
   { name: 'Turkish E', logo: '/logos/regional/turkishe.png', monochrome: true },
   { name: 'Yeditepe Üniversitesi', logo: '/logos/regional/yeditepe-universitesi-logo.svg', invertOnLight: true },
-  { name: 'Yeni Bir Lider', logo: '/logos/regional/yeni-bir-lider.png', invertOnLight: true },
+  { name: 'Yeni Bir Lider', logo: '/logos/regional/yeni-bir-lider.png' },
   { name: 'Yıldız Teknik Üniversitesi', logo: '/logos/regional/y%C4%B1ld%C4%B1z-teknik-universitesi-logo.svg' },
   { name: 'Şişecam', logo: '/logos/regional/%C5%9Ei%C5%9Fecam_logo.svg' },
   { name: 'YZD', logo: '/logos/regional/YZD_logo.jpeg' },
